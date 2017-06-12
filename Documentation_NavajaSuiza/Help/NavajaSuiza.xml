@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>NavajaSuiza</name>
+  </assembly>
+  <members>
+    <member name="T:NavajaSuiza.Form1">
+      <summary>
+        <para>Union de 4 ejercicios para conformar un proyecto de entornos</para>
+        <para>Los distintos ejercicios son:
+            <list type="bullet"><item><description>Tema 4 - Ejercicio 4 </description><description> Conversor de Moneda, pasar de Pesetas
+                    a euros y al reves.</description></item><item><description>Tema 4 - Ejercicio 13 </description><description> calcular la base dada con el 
+                    exponente dado.</description></item><item><description>Tema 5 - Ejercicio 2 </description><description> Lectura de 10 numeros en un vector
+                    y nos devuelve la media de todo el vector.</description></item><item><description>Tema 5 - Ejercicio 3 </description><description> Lectura de 10 numeros en un vector
+                    y nos devuelve el numero menor de todos ellos.</description></item></list></para>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Form1.#ctor">
+      <summary>
+            Inicializa una nueva instancia de la <see cref="T:NavajaSuiza.Form1" /> clase.
+            </summary>
+    </member>
+    <member name="F:NavajaSuiza.Form1.Ejercicio13">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Form1.Ejercicio13</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Form1.Ejercicio13_Click(System.Object,System.EventArgs)">
+      <summary>
+            Instanciamos el form <see cref="T:NavajaSuiza.Tema4.Ejercicio13.CalcularBaseExponente" /> para poder abrirlo al pulsar el boton
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">The <see cref="T:System.EventArgs" />Instancia que contiene los datos del evento.</param>
+    </member>
+    <member name="F:NavajaSuiza.Form1.Ejercicio2">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Form1.Ejercicio2</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Form1.Ejercicio2_Click(System.Object,System.EventArgs)">
+      <summary>
+            Instanciamos el form <see cref="T:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector" /> para poder abrirlo al pulsar el boton
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">The <see cref="T:System.EventArgs" />Instancia que contiene los datos del evento.</param>
+    </member>
+    <member name="F:NavajaSuiza.Form1.Ejercicio3">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Form1.Ejercicio3</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Form1.Ejercicio3_Click(System.Object,System.EventArgs)">
+      <summary>
+            Instanciamos el form <see cref="T:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor" /> para poder abrirlo al pulsar el boton
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">El <see cref="T:System.EventArgs" />Instancia que contiene los datos del evento.</param>
+    </member>
+    <member name="F:NavajaSuiza.Form1.Ejercicio4">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Form1.Ejercicio4</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Form1.Ejercicio4_Click(System.Object,System.EventArgs)">
+      <summary>
+            Instanciamos el form <see cref="T:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros" /> para poder abrirlo al pulsar el boton
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">The <see cref="T:System.EventArgs" />Instancia que contiene los datos del evento.</param>
+    </member>
+    <member name="F:NavajaSuiza.Form1.Tema4">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Form1.Tema4</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:NavajaSuiza.Form1.Tema5">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Form1.Tema5</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:NavajaSuiza.Tema4.Ejercicio13.CalcularBaseExponente">
+      <summary>
+            Ejercicio13 clacular de un numero con Base X
+            y con exponente X
+            </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema4.Ejercicio13.CalcularBaseExponente.#ctor">
+      <summary>
+            Inicializa una nueva instancia de la <see cref="T:NavajaSuiza.Tema4.Ejercicio13.CalcularBaseExponente" /> clase.	
+            </summary>
+    </member>
+    <member name="F:NavajaSuiza.Tema4.Ejercicio13.CalcularBaseExponente.BCalcular">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Tema4.Ejercicio13.CalcularBaseExponente.BCalcular</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema4.Ejercicio13.CalcularBaseExponente.BCalcular_Click(System.Object,System.EventArgs)">
+      <summary>
+            Boton para calcular el resultado de
+            calcular la base con el exponente.
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">El <see cref="T:System.EventArgs" /> Ejemplo que contiene los datos del evento.</param>
+    </member>
+    <member name="M:NavajaSuiza.Tema4.Ejercicio13.CalcularBaseExponente.InitializeComponent">
+      <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+    </member>
+    <member name="T:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros">
+      <summary>
+            programa para hacer el cambio de moneda de euros a pesetas y vicebersa
+            </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros.#ctor">
+      <summary>
+            Inicializa una nueva instancia de la <see cref="T:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros" /> clase.
+            </summary>
+    </member>
+    <member name="F:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros.BEuros">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros.BEuros</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros.BEuros_Click(System.Object,System.EventArgs)">
+      <summary>
+            Boton para covertir los pesetas a euros.
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">El <see cref="T:System.EventArgs" /> Ejemplo que contiene los datos del evento.</param>
+    </member>
+    <member name="F:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros.BPesetas">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros.BPesetas</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros.BPesetas_Click(System.Object,System.EventArgs)">
+      <summary>
+            Boton para covertir los euros a pesetas.
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">El <see cref="T:System.EventArgs" /> Ejemplo que contiene los datos del evento.</param>
+    </member>
+    <member name="M:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros.ComprobarTextBox(System.Object,System.EventArgs)">
+      <summary>
+            Evento para comprobar los TextBox y que solo se 
+            itroduzcas numeros doubles y no letras ni caracteres extraños
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">El <see cref="T:System.EventArgs" /> Ejemplo que contiene los datos del evento.</param>
+    </member>
+    <member name="F:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros.Euros">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Tema4.Ejercicio4.ConvertirPtsEuros.Euros</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector">
+      <summary>
+            Lee los numeros que introducimos en el vector,
+            calcula la media despues de a ver llenado el vector 
+            y por ultimo paso nos mostrara la media del mismo.
+            </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.#ctor">
+      <summary>
+            Lee los numeros que introducimos en el vector,
+            calcula la media despues de a ver llenado el vector 
+            y por ultimo paso nos mostrara la media del mismo.
+            </summary>
+    </member>
+    <member name="F:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.BInsertar">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.BInsertar</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.BInsertar_Click(System.Object,System.EventArgs)">
+      <summary>
+            Cada vez que hacemos "click" introducimos un 
+            numero en el vector
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">El <see cref="T:System.EventArgs" /> instancia que contiene los datos del evento.</param>
+    </member>
+    <member name="F:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.BMostrar">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.BMostrar</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.BMostrar_Click(System.Object,System.EventArgs)">
+      <summary>
+            Boton para mostrar los numeros que estan en el vector.
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">The <see cref="T:System.EventArgs" />instancia que contiene los datos del evento.</param>
+    </member>
+    <member name="F:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.CLV">
+      <summary>
+            Inicializamos la clase LecturaVector
+            </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.ComprobarTextBox(System.Object,System.EventArgs)">
+      <summary>
+            Comprobamos que lo que introducimos en el textbox son numeros
+            enteros y no dobles ni letras ni caracteres extraños.
+            </summary>
+      <param name="sender">El sender.</param>
+      <param name="e">El <see cref="T:System.EventArgs" />instancia que contiene los datos del evento.</param>
+    </member>
+    <member name="M:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.FLeerVector(System.Int32[])">
+      <summary>
+            Leemos el vector introduciendo los
+            numeros
+            </summary>
+      <param name="vector">Numeros que van en el vector.</param>
+    </member>
+    <member name="F:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.KTam">
+      <summary>
+            Constante para limitar el vector
+            </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.LecturaNumerosVector_Load(System.Object,System.EventArgs)">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.LecturaNumerosVector_Load(System.Object,System.EventArgs)</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sender">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sender</parameter>
+            <parameter>M:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.LecturaNumerosVector_Load(System.Object,System.EventArgs)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="e">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>e</parameter>
+            <parameter>M:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.LecturaNumerosVector_Load(System.Object,System.EventArgs)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="F:NavajaSuiza.Tema5.Ejercicio2.LecturaNumerosVector.vector">
+      <summary>
+            Inicializamos el vector con un tamaño determinado
+            </summary>
+    </member>
+    <member name="T:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor">
+      <summary>
+            	Introducir 10 numeros en un vector 
+            	y leer todos ellos y sacar el menor de todos ellos
+            </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.#ctor">
+      <summary>
+            Lee los numeros que introducimos en el vector,
+            y busca entre todo el vector el numero menor de todos ellos.
+            </summary>
+    </member>
+    <member name="F:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.BComprobar">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.BComprobar</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.BComprobar_Click(System.Object,System.EventArgs)">
+      <summary>
+            Boton para mostrar el numero menor del vector.
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">The <see cref="T:System.EventArgs" />instancia que contiene los datos del evento.</param>
+    </member>
+    <member name="F:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.BLeer">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.BLeer</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.BLeer_Click(System.Object,System.EventArgs)">
+      <summary>
+            Cada vez que hacemos "click" introducimos un 
+            numero en el vector
+            </summary>
+      <param name="sender">La fuente del evento.</param>
+      <param name="e">El <see cref="T:System.EventArgs" /> instancia que contiene los datos del evento.</param>
+    </member>
+    <member name="M:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.ComprobarTextBox(System.Object,System.EventArgs)">
+      <summary>
+            Comprobamos que lo que introducimos en el textbox son numeros
+            enteros y no dobles ni letras ni caracteres extraños.
+            </summary>
+      <param name="sender">El sender.</param>
+      <param name="e">El <see cref="T:System.EventArgs" />instancia que contiene los datos del evento.</param>
+    </member>
+    <member name="M:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.FLeerVector(System.Int32[])">
+      <summary>
+            Leemos el vector introduciendo los
+            numeros
+            </summary>
+      <param name="vector">Numeros que van en el vector.</param>
+    </member>
+    <member name="F:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.KTam">
+      <summary>
+            Constante que sera el tamaño del vector
+            </summary>
+    </member>
+    <member name="F:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.posicion">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.posicion</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:NavajaSuiza.Tema5.Ejercicio3.NumeroVectorMenor.vector">
+      <summary>
+            Inicializacion del vector con el tamaño dado 
+            en la constante KTam
+            </summary>
+    </member>
+  </members>
+</doc>
