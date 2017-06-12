@@ -17,7 +17,7 @@ namespace NavajaSuiza.Ejercicio2
     /// <summary>
     /// calcula la media del vector
     /// </summary>
-    class LecturaVector
+    public class LecturaVector
     {
         /// <summary>
         /// Constante que da el tope al vector

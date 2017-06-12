@@ -81,7 +81,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tema4\Ejercicio13\CBaseExponente.cs" />
+    <Compile Include="Tema4\Ejercicio13\ClassBaseExponente.cs" />
     <Compile Include="Tema4\Ejercicio13\CalcularBaseExponente.cs">
       <SubType>Form</SubType>
     </Compile>

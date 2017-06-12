@@ -1,5 +1,5 @@
 ﻿using NavajaSuiza.Ejercicio4;
-using NavajaSuiza.Ejercicio13;
+
 using NavajaSuiza.Ejercicio2;
 using NavajaSuiza.Ejercicio3;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace TestNavajaSuiza
 {
     [TestClass]
-    public class PruebasNavajaSuiza
+    public class PruebasPtsEuros
     {
         /// <summary>
         /// Ejercicio 4.
@@ -90,80 +90,6 @@ namespace TestNavajaSuiza
         }
         //==============================================//
 
-        /// <summary>
-        /// Ejercicio 13.
-        /// Controlar el resultado que da
-        /// el valor de MaxValue
-        /// </summary>
-        
-        [TestMethod]
-        public void ControlarBaseMaxvalue()
-        {
-            CalcularBaseExponente baseExponente = new CalcularBaseExponente();
-
-            double base1 = double.MaxValue;
-            bool resultadObtenido;
-            bool resultadoEsperado = true;
-
-            resultadObtenido = baseExponente.CalculaBaseExponente(base1);
-
-            Assert.AreEqual(resultadoEsperado, resultadObtenido);
-        }
-        /// <summary>
-        /// Ejercicio 13.
-        /// Comprobar si soporta los numeros negativos
-        /// </summary>
-        
-        [TestMethod]
-        public void ControlarBaseNegativo()
-        {
-            CalcularBaseExponente baseExponente = new CalcularBaseExponente();
-
-            double base1 = -10;
-            bool resultadObtenido;
-            bool resultadoEsperado = true;
-
-            resultadObtenido = baseExponente.CalculaBaseExponente(base1);
-
-            Assert.AreEqual(resultadoEsperado, resultadObtenido);
-        }
-        /// <summary>
-        /// Ejercicio 13.
-        /// Comprobar si soporta el MaxValue
-        /// </summary>
-        
-        [TestMethod]
-        public void ControlarExponenteMaxValue()
-        {
-            CalcularBaseExponente baseExponente = new CalcularBaseExponente();
-
-            double exponente = double.MaxValue;
-            bool resultadObtenido;
-            bool resultadoEsperado = true;
-
-            resultadObtenido = baseExponente.CalculaBaseExponente(exponente);
-
-            Assert.AreEqual(resultadoEsperado, resultadObtenido);
-        }
-        /// <summary>
-        /// Ejercicio 13.
-        /// Comprobar si soporta los numeros negativos
-        /// </summary>
-        
-        [TestMethod]
-        public void ControlarExponenteNegativo()
-        {
-            CalcularBaseExponente baseExponente = new CalcularBaseExponente();
-
-            double exponente = double.MaxValue;
-            bool resultadObtenido;
-            bool resultadoEsperado = true;
-
-            resultadObtenido = baseExponente.CalculaBaseExponente(exponente);
-
-            Assert.AreEqual(resultadoEsperado, resultadObtenido);
-        }
-        //======================================================================//
         /// <summary>
         /// Ejercicio 2.
         /// Comprobar si soporta el vector numeros Maxvalue

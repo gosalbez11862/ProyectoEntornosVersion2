@@ -14,7 +14,7 @@
 
 namespace NavajaSuiza.Ejercicio13
 {
-    class ClassBaseExponente
+    public class ClassBaseExponente
     {
         /// <summary>
         /// Funcion que calcula el exponente del numero,
