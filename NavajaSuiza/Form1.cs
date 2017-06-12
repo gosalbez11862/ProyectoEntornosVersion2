@@ -77,6 +77,7 @@ namespace NavajaSuiza
         {
             Ejercicio13.CalcularBaseExponente oFormulario2 = new Ejercicio13.CalcularBaseExponente();
             oFormulario2.ShowDialog();
+
         }
 
         /// <summary>
