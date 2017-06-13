@@ -5,27 +5,25 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace TestNavajaSuiza
 {
     [TestClass]
-    public class UnitTest1
+    public class PruebaBaseExponente
     {
-        [TestMethod]
-        public void PruebaBaseExponente()
-        {
-            /// <summary>
-            /// Ejercicio 13.
-            /// Controlar el resultado que da
-            /// el valor de MaxValue
-           /// </summary>
+     /// <summary>
+     /// Ejercicio 13.
+     /// Controlar el resultado que da
+     /// el valor de MaxValue
+     /// </summary>
 
         [TestMethod]
         public void ControlarBaseMaxvalue()
         {
-            CalcularBaseExponente baseExponente = new CalcularBaseExponente();
+            ClassBaseExponente baseExponente = new ClassBaseExponente();
 
             double base1 = double.MaxValue;
-            bool resultadObtenido;
+            double Exponente1 = double.MaxValue;
+            double resultadObtenido;
             bool resultadoEsperado = true;
 
-            resultadObtenido = baseExponente.Potencia(base1);
+            resultadObtenido = baseExponente.Potencia(base1, Exponente1);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
@@ -40,11 +38,11 @@ namespace TestNavajaSuiza
             ClassBaseExponente baseExponente = new ClassBaseExponente();
 
             double base1 = -10;
-            double base2 = 1;
-            bool resultadObtenido;
+            double Exponente1 = double.MaxValue; ;
+            double resultadObtenido;
             bool resultadoEsperado = true;
 
-            resultadObtenido = baseExponente.Potencia(base1, base2);
+            resultadObtenido = baseExponente.Potencia(base1, Exponente1);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
@@ -58,11 +56,12 @@ namespace TestNavajaSuiza
         {
             ClassBaseExponente baseExponente = new ClassBaseExponente();
 
-            double exponente = double.MaxValue;
-            bool resultadObtenido;
+            double base1 = double.MaxValue;
+            double Exponente1 = double.MaxValue;
+            double resultadObtenido;
             bool resultadoEsperado = true;
 
-            resultadObtenido = baseExponente.Potencia(exponente);
+            resultadObtenido = baseExponente.Potencia(base1, Exponente1);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
@@ -76,15 +75,16 @@ namespace TestNavajaSuiza
         {
             ClassBaseExponente baseExponente = new ClassBaseExponente();
 
-            double exponente = double.MaxValue;
-            bool resultadObtenido;
+            double base1 = double.MaxValue;
+            double Exponente1 = double.MaxValue;
+            double resultadObtenido;
             bool resultadoEsperado = true;
 
-            resultadObtenido = baseExponente.Potencia(exponente);
+            resultadObtenido = baseExponente.Potencia(base1, Exponente1);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
-    }
+    
         
     }
 }

@@ -1,7 +1,5 @@
 ﻿using NavajaSuiza.Ejercicio4;
 
-using NavajaSuiza.Ejercicio2;
-using NavajaSuiza.Ejercicio3;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestNavajaSuiza
@@ -21,7 +19,7 @@ namespace TestNavajaSuiza
             ConvertirPtsEuros conversor = new ConvertirPtsEuros();
 
             double pesetas = -1;
-            bool resultadObtenido;
+            double resultadObtenido;
             bool resultadoEsperado = false;
 
             resultadObtenido = conversor.ComprobarPesetas(pesetas);
@@ -41,7 +39,7 @@ namespace TestNavajaSuiza
             ConvertirPtsEuros conversor = new ConvertirPtsEuros();
 
             double pesetas = double.MaxValue;
-            bool resultadObtenido;
+            double resultadObtenido;
             bool resultadoEsperado = true;
 
             resultadObtenido = conversor.ComprobarPesetas(pesetas);
@@ -61,7 +59,7 @@ namespace TestNavajaSuiza
             ConvertirPtsEuros conversor = new ConvertirPtsEuros();
 
             double euros = -10;
-            bool resultadObtenido;
+            double resultadObtenido;
             bool resultadoEsperado = false;
 
             resultadObtenido = conversor.ComprobarEuros(euros);
@@ -81,84 +79,10 @@ namespace TestNavajaSuiza
             ConvertirPtsEuros conversor = new ConvertirPtsEuros();
 
             double euros = double.MaxValue;
-            bool resultadObtenido;
+            double resultadObtenido;
             bool resultadoEsperado = true;
 
             resultadObtenido = conversor.ComprobarEuros(euros);
-
-            Assert.AreEqual(resultadoEsperado, resultadObtenido);
-        }
-        //==============================================//
-
-        /// <summary>
-        /// Ejercicio 2.
-        /// Comprobar si soporta el vector numeros Maxvalue
-        /// </summary>
-        
-        [TestMethod]
-        public void ControlarMediaVectorMaxValue()
-        {
-            LecturaNumerosVector nVector = new LecturaNumerosVector();
-
-            int vector = int.MaxValue;
-            bool resultadObtenido;
-            bool resultadoEsperado = false;
-
-            resultadObtenido = nVector.FLeerVector(vector);
-
-            Assert.AreEqual(resultadoEsperado, resultadObtenido);
-        }
-        /// <summary>
-        /// Ejercicio 2.
-        /// Comprobar si soporta el vector numeros MinValue
-        /// </summary>
-        [TestMethod]
-        public void ControlarMediaVectorMinValue()
-        {
-            LecturaNumerosVector nVector = new LecturaNumerosVector();
-
-            int vector = int.MinValue;
-            bool resultadObtenido;
-            bool resultadoEsperado = false;
-
-            resultadObtenido = nVector.FLeerVector(vector);
-
-            Assert.AreEqual(resultadoEsperado, resultadObtenido);
-        }
-        //===================================================//
-
-        /// <summary>
-        /// Ejercicio 3.
-        /// Comprobar si soporta el vector numeros MinValue
-        /// </summary>
-        [TestMethod]
-        public void ControlarMenorVectorMaxValue()
-        {
-            NumeroVectorMenor nmVector = new NumeroVectorMenor();
-
-            int vector = int.MaxValue;
-            bool resultadObtenido;
-            bool resultadoEsperado = false;
-
-            resultadObtenido = nmVector.FLeerVector(vector);
-
-            Assert.AreEqual(resultadoEsperado, resultadObtenido);
-        }
-
-        /// <summary>
-        /// Ejercicio 3.
-        /// Comprobar si soporta el vector numeros MinValue
-        /// </summary>
-        [TestMethod]
-        public void ControlarMenorVectorMinValue()
-        {
-            NumeroVectorMenor nmVector = new NumeroVectorMenor();
-
-            int vector = int.MinValue;
-            bool resultadObtenido;
-            bool resultadoEsperado = false;
-
-            resultadObtenido = nmVector.FLeerVector(vector);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }

@@ -31,7 +31,7 @@ namespace NavajaSuiza.Ejercicio2
         /// <summary>
         /// Inicializamos la clase LecturaVector
         /// </summary>
-        LecturaVector CLV = new LecturaVector();
+        CLecturaVector CLV = new CLecturaVector();
 
         /// <summary>
         /// inicializacion de la posicion de recoger los datos del vector
