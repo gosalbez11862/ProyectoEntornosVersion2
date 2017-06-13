@@ -16,13 +16,11 @@ namespace TestNavajaSuiza
         [TestMethod]
         public void ControlarPesetasNegativos()
         {
-            ConvertirPtsEuros conversor = new ConvertirPtsEuros();
-
             double pesetas = -1;
             double resultadObtenido;
             bool resultadoEsperado = false;
 
-            resultadObtenido = conversor.ComprobarPesetas(pesetas);
+            resultadObtenido = CPtsEuros.FConversorpta(pesetas);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
@@ -30,19 +28,18 @@ namespace TestNavajaSuiza
         /// <summary>
         /// Ejercicio 4.
         /// Controlar que no pasen pesetas "monedas"
-        /// con valor maxvalue
+        /// con valor de has ta cuatro digitos, ya que el textBox solo permite la entrada
+        /// no superior a 4 digitos
         /// </summary>
-        
+
         [TestMethod]
         public void ControlarPesetasMaxValue()
         {
-            ConvertirPtsEuros conversor = new ConvertirPtsEuros();
-
-            double pesetas = double.MaxValue;
+            double pesetas = 9999;
             double resultadObtenido;
             bool resultadoEsperado = true;
 
-            resultadObtenido = conversor.ComprobarPesetas(pesetas);
+            resultadObtenido = CPtsEuros.FConversorpta(pesetas);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
@@ -56,13 +53,11 @@ namespace TestNavajaSuiza
         [TestMethod]
         public void ControlarEurosNegativo()
         {
-            ConvertirPtsEuros conversor = new ConvertirPtsEuros();
-
             double euros = -10;
             double resultadObtenido;
             bool resultadoEsperado = false;
 
-            resultadObtenido = conversor.ComprobarEuros(euros);
+            resultadObtenido = CPtsEuros.FConversoreu(euros);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
@@ -70,19 +65,18 @@ namespace TestNavajaSuiza
         /// <summary>
         /// Ejercicio 4.
         /// Controlar que no pasen euros "monedas"
-        /// con valor Maxvalue
+        /// con valor de has ta cuatro digitos, ya que el textBox solo permite la entrada
+        /// no superior a 4 digitos
         /// </summary>
         
         [TestMethod]
         public void ControlarEurosMaxvalue()
         {
-            ConvertirPtsEuros conversor = new ConvertirPtsEuros();
-
-            double euros = double.MaxValue;
+            double euros = 9999;
             double resultadObtenido;
             bool resultadoEsperado = true;
 
-            resultadObtenido = conversor.ComprobarEuros(euros);
+            resultadObtenido = CPtsEuros.FConversoreu(euros);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }

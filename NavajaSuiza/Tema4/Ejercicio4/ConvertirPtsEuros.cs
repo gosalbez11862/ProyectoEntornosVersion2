@@ -30,7 +30,7 @@ namespace NavajaSuiza.Ejercicio4
         }
         /// <summary>
         /// comprueba si el numero introducido es correcto
-        /// y si lo es lo manda a la funcion <see cref="PtsEuros.FConversorpta"/>
+        /// y si lo es lo manda a la funcion <see cref="CPtsEuros.FConversorpta"/>
         /// para hacer la conversion
         /// </summary>
         public void ComprobarPesetas()
@@ -44,7 +44,7 @@ namespace NavajaSuiza.Ejercicio4
             {
                 if (euro > 0)
                 {
-                    resultado = PtsEuros.FConversorpta(euro);
+                    resultado = CPtsEuros.FConversorpta(euro);
                     TPesetas.Text = resultado.ToString();
                 }
                 else
@@ -65,7 +65,7 @@ namespace NavajaSuiza.Ejercicio4
 
         /// <summary>
         /// comprueba si el numero introducido es correcto
-        /// y si lo es lo manda a la funcion <see cref="PtsEuros.FConversoreu"/>
+        /// y si lo es lo manda a la funcion <see cref="CPtsEuros.FConversoreu"/>
         /// para hacer la conversion
         /// </summary>
         public void ComprobarEuros()
@@ -79,7 +79,7 @@ namespace NavajaSuiza.Ejercicio4
             {
                 if (pta > 0)
                 {
-                    resultado = PtsEuros.FConversoreu(pta);
+                    resultado = CPtsEuros.FConversoreu(pta);
                     TEuros.Text = resultado.ToString("C2");
                 }
                 else

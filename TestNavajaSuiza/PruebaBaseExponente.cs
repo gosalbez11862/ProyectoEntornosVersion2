@@ -84,7 +84,5 @@ namespace TestNavajaSuiza
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
-    
-        
     }
 }
