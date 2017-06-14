@@ -70,7 +70,7 @@ namespace NavajaSuiza.Ejercicio4
         /// </summary>
         public void ComprobarEuros()
         {
-            double pta, resultado;
+            double pta,resultado;
             bool moneda = false;
 
             moneda = double.TryParse(TPesetas.Text, out pta);
@@ -80,7 +80,7 @@ namespace NavajaSuiza.Ejercicio4
                 if (pta > 0)
                 {
                     resultado = CPtsEuros.FConversoreu(pta);
-                    TEuros.Text = resultado.ToString("C2");
+                    TEuros.Text = resultado.ToString();
                 }
                 else
                 {

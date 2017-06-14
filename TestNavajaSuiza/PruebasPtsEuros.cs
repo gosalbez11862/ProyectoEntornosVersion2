@@ -9,19 +9,20 @@ namespace TestNavajaSuiza
     {
         /// <summary>
         /// Ejercicio 4.
-        /// Controlar que no pasen pesetas "monedas"
-        /// con valor negativo
+        /// Controlar que pasa un numero aleatorio,
+        /// dado que los negativos nunca podran pasar
         /// </summary>
         
         [TestMethod]
-        public void ControlarPesetasNegativos()
+        public void ControlarPesetas()
         {
-            double pesetas = -1;
-            double resultadObtenido;
-            bool resultadoEsperado = false;
+            double pesetas = 166.38;
+            int resultadoEsperado = 1;
 
-            resultadObtenido = CPtsEuros.FConversorpta(pesetas);
+            //Prueba
+            var resultadObtenido = CPtsEuros.FConversoreu(pesetas);
 
+            //Assert o afirmacion
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
 
@@ -36,28 +37,26 @@ namespace TestNavajaSuiza
         public void ControlarPesetasMaxValue()
         {
             double pesetas = 9999;
-            double resultadObtenido;
-            bool resultadoEsperado = true;
+            double resultadoEsperado = 60.10;
 
-            resultadObtenido = CPtsEuros.FConversorpta(pesetas);
+            var resultadObtenido = CPtsEuros.FConversoreu(pesetas);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
 
         /// <summary>
         /// Ejercicio 4.
-        /// Controlar que no pasen euros "monedas"
-        /// con valores negativos
+        /// Controlar que pasa un numero aleatorio,
+        /// dado que los negativos nunca podran pasar
         /// </summary>
-        
-        [TestMethod]
-        public void ControlarEurosNegativo()
-        {
-            double euros = -10;
-            double resultadObtenido;
-            bool resultadoEsperado = false;
 
-            resultadObtenido = CPtsEuros.FConversoreu(euros);
+        [TestMethod]
+        public void ControlarEuros()
+        {
+            double euros = 1;
+            double resultadoEsperado = 166.38;
+
+            var resultadObtenido = CPtsEuros.FConversoreu(euros);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
@@ -73,12 +72,22 @@ namespace TestNavajaSuiza
         public void ControlarEurosMaxvalue()
         {
             double euros = 9999;
-            double resultadObtenido;
-            bool resultadoEsperado = true;
+            double resultadoEsperado = 1663633.62;
 
-            resultadObtenido = CPtsEuros.FConversoreu(euros);
+            var resultadObtenido = CPtsEuros.FConversoreu(euros);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
+        }
+
+        [TestMethod]
+        public void ControlarEurosNegativos()
+        {
+            int euros = -1;
+            ConvertirPtsEuros conversor = new ConvertirPtsEuros();
+
+            double resultado = conversor.ComprobarEuros(euros);
+
+            Assert.IsNotNull(resultado);
         }
     }
 }
