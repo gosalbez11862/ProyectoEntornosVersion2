@@ -16,30 +16,32 @@ namespace TestNavajaSuiza
         [TestMethod]
         public void ControlarPesetas()
         {
-            double pesetas = 166.38;
-            int resultadoEsperado = 1;
+            //Escenario de Prueba
+            double cantidadPesetas = 10000;
+            double resultadoEsperado = 1663800;
+            double resultadoObtenido;
 
-            //Prueba
-            var resultadObtenido = CPtsEuros.FConversoreu(pesetas);
+            //Acción a Probar
+            resultadoObtenido = CPtsEuros.FConversorpta(cantidadPesetas);
 
-            //Assert o afirmacion
-            Assert.AreEqual(resultadoEsperado, resultadObtenido);
+            //Afirmación de la Prueba
+            Assert.AreEqual(resultadoEsperado, resultadoObtenido);
         }
 
         /// <summary>
         /// Ejercicio 4.
-        /// Controlar que no pasen pesetas "monedas"
-        /// con valor de has ta cuatro digitos, ya que el textBox solo permite la entrada
+        /// Controlar que no pasen pta "monedas"
+        /// con valor de hasta cuatro digitos, ya que el textBox solo permite la entrada
         /// no superior a 4 digitos
         /// </summary>
 
         [TestMethod]
-        public void ControlarPesetasMaxValue()
+        public void ControlarPtaMaxvalue()
         {
-            double pesetas = 9999;
-            double resultadoEsperado = 60.10;
+            double Pta = 9999;
+            double resultadoEsperado = 1663633.62;
 
-            var resultadObtenido = CPtsEuros.FConversoreu(pesetas);
+            var resultadObtenido = CPtsEuros.FConversorpta(Pta);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
         }
@@ -53,18 +55,22 @@ namespace TestNavajaSuiza
         [TestMethod]
         public void ControlarEuros()
         {
-            double euros = 1;
-            double resultadoEsperado = 166.38;
+            //Escenario de Prueba
+            double cantidadEuros = 6;
+            double resultadoEsperado = 0.0360620266858998;
+            double resultadoObtenido = 0;
 
-            var resultadObtenido = CPtsEuros.FConversoreu(euros);
+            //Acción a Probar
+            resultadoObtenido = CPtsEuros.FConversoreu(cantidadEuros);
 
-            Assert.AreEqual(resultadoEsperado, resultadObtenido);
+            //Afirmación de la Prueba
+            Assert.AreEqual(resultadoEsperado, resultadoObtenido);
         }
 
         /// <summary>
         /// Ejercicio 4.
         /// Controlar que no pasen euros "monedas"
-        /// con valor de has ta cuatro digitos, ya que el textBox solo permite la entrada
+        /// con valor de hasta cuatro digitos, ya que el textBox solo permite la entrada
         /// no superior a 4 digitos
         /// </summary>
         
@@ -72,22 +78,11 @@ namespace TestNavajaSuiza
         public void ControlarEurosMaxvalue()
         {
             double euros = 9999;
-            double resultadoEsperado = 1663633.62;
+            double resultadoEsperado = 60.0973674720519;
 
             var resultadObtenido = CPtsEuros.FConversoreu(euros);
 
             Assert.AreEqual(resultadoEsperado, resultadObtenido);
-        }
-
-        [TestMethod]
-        public void ControlarEurosNegativos()
-        {
-            int euros = -1;
-            ConvertirPtsEuros conversor = new ConvertirPtsEuros();
-
-            double resultado = conversor.ComprobarEuros(euros);
-
-            Assert.IsNotNull(resultado);
         }
     }
 }

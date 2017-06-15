@@ -14,7 +14,7 @@ namespace TestNavajaSuiza
         [TestMethod]
         public void ControlarMediaVectorMaxValue()
         {
-            /*LecturaNumerosVector nVector = new LecturaNumerosVector();
+           /* LecturaNumerosVector nVector = new LecturaNumerosVector();
 
             int vector1 = int.MaxValue;
             int resultadObtenido;
