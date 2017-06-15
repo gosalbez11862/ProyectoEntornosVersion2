@@ -51,10 +51,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="PruebasPtsEuros.cs" />
+    <Compile Include="Pruebas_NavajaSuiza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PruebaBaseExponente.cs" />
-    <Compile Include="PruebaLecturaVector.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NavajaSuiza\NavajaSuiza.csproj">

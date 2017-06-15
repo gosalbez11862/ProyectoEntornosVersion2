@@ -67,6 +67,12 @@ namespace NavajaSuiza.Ejercicio3
                     {
                         vector[posicion] = numero;
                         TNumero.Text = "";
+                        
+                        if (posicion == 9)
+                        {
+                            BComprobar.Enabled = true;
+                            BLeer.Enabled = false;
+                        }
                         posicion++;
                     }
                     else
@@ -74,9 +80,13 @@ namespace NavajaSuiza.Ejercicio3
                         TNumero.Enabled = false;
                     }
 
-                    LResultado.Text = numero.ToString("D");
+                    LResultado.Text = numero.ToString();
                 }
-                
+                else
+                {
+                    MessageBox.Show("¡Error! Debe Introducir un Numero Menor");
+                }
+
             }
             else
             {
